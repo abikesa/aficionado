@@ -15,9 +15,9 @@ MathJax.Hub.Config({
 
 > *[Letters to Abigail](https://www.masshist.org/digitaladams/archive/doc?id=L17800512jasecond)*
 
-                                  1. Pain
+                             1. Pessimism
                                          \
-         2. Creative-Destructive-Will -> 4. Dionysian -> 5. Science -> 6. Morality
+                2. Beyond Good & Evil -> 4. Dionysian -> 5. Science -> 6. Morality
                                          /
                                          3. Robustness
 
