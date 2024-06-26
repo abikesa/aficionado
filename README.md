@@ -23,7 +23,7 @@ MathJax.Hub.Config({
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg)
 
-                                1. Chaos
+                                 1. Chaos
                                          \
                             2. Frenzy -> 4. Dionysian -> 5. Algorithm -> 6. Binary
                                          /
