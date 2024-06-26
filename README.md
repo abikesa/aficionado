@@ -15,6 +15,12 @@ MathJax.Hub.Config({
 
 > *[Letters to Abigail](https://www.masshist.org/digitaladams/archive/doc?id=L17800512jasecond)*
 
+                             1. Pain
+                                    \
+                    2. Knowledge -> 4. Dionysian -> 5. Science -> 6. Morality
+                                    /
+                                     3. ? 
+
 ![](https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg)
 
 ### Activation Function, $Q$: 1st, 3rd, 5th, [♭♭7th](https://en.wikipedia.org/wiki/Chord_notation#Chord_quality), 9th  
