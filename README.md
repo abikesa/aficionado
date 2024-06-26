@@ -15,11 +15,11 @@ MathJax.Hub.Config({
 
 > *[Letters to Abigail](https://www.masshist.org/digitaladams/archive/doc?id=L17800512jasecond)*
 
-                             1. Pain
-                                    \
-                2. Will-to-Power -> 4. Dionysian -> 5. Science -> 6. Morality
-                                    /
-                                     3. Robustness
+                                  1. Pain
+                                         \
+         2. Creative-Destructive-Will -> 4. Dionysian -> 5. Science -> 6. Morality
+                                         /
+                                         3. Robustness
 
 ![](https://upload.wikimedia.org/wikipedia/commons/4/49/%22The_School_of_Athens%22_by_Raffaello_Sanzio_da_Urbino.jpg)
 
