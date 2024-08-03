@@ -1,6 +1,6 @@
 # Tony
 
-> `f(t)` life, `S(t)` television, `h(t)` film, `t(X'X).X'Y` art, `b` science, `SV'` tech
+> `f(t)` life, `S(t)` television, `h(t)` film, `t(X'X).X'Y` art, `b` science, `SV'` grip
 
                    1. f(t)
                          \
