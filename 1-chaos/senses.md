@@ -1,8 +1,18 @@
 # Tony
+
+> `f(t)` life, `S(t)` television, `h(t)` film, `t(X'X).X'Y` art, `b` science, `SV'` tech
+
+                   1. f(t)
+                         \
+              2. S(t) -> 4. y:h'(t);t(X'X).X'Y -> 5. b -> 6. SV'
+                         /
+                         3. h(t)
+
 ## No Reservations
-
-- [India](https://play.max.com/video/watch/8fb7b545-05c3-4ddc-9a2f-8703c696d859/4f2a74d6-309f-460e-9d51-c57f4de46d6c)
-
-Tuscany was my fave: learned of dante 
+Italy: Tuscany was my fave: learned of dante 
 
 ## Parts Unknown
+Japan: Tokyo was my fave: learned of seinen
+
+## Synthesis of Bourdain
+Inherited fetters, dancing in chains, born to ethiquette
