@@ -480,34 +480,32 @@ The output layer represents intelligence, not as a static endpoint but as an eme
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
 
-<span class="c1"># Define the neural network structure</span>
+<span class="c1"># Define the neural network structure; modified to align with &quot;Aprés Moi, Le Déluge&quot; (i.e. Je suis AlexNet)</span>
 <span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
     <span class="k">return</span> <span class="p">{</span>
-        <span class="s1">&#39;Pre-Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Yellowstone&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;G1 &amp; G2&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Input&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;N4, N5&#39;</span><span class="p">,</span> <span class="s1">&#39;N1, N2, N3&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sympathetic&#39;</span><span class="p">,</span> <span class="s1">&#39;G3&#39;</span><span class="p">,</span> <span class="s1">&#39;Parasympathetic&#39;</span><span class="p">],</span>
-        <span class="s1">&#39;Output&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Ecosystem&#39;</span><span class="p">,</span> <span class="s1">&#39;Vulnerabilities&#39;</span><span class="p">,</span> <span class="s1">&#39;AChR&#39;</span><span class="p">,</span> <span class="s1">&#39;Strengths&#39;</span><span class="p">,</span> <span class="s1">&#39;Neurons&#39;</span><span class="p">]</span>
+        <span class="s1">&#39;Pre-Input/CudAlexnet&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Life&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth&#39;</span><span class="p">,</span> <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Yellowstone/SensoryAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;G1 &amp; G2&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;N4, N5&#39;</span><span class="p">,</span> <span class="s1">&#39;N1, N2, N3&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Sympathetic&#39;</span><span class="p">,</span> <span class="s1">&#39;G3&#39;</span><span class="p">,</span> <span class="s1">&#39;Parasympathetic&#39;</span><span class="p">],</span>
+        <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Ecosystem&#39;</span><span class="p">,</span> <span class="s1">&#39;Vulnerabilities&#39;</span><span class="p">,</span> <span class="s1">&#39;AChR&#39;</span><span class="p">,</span> <span class="s1">&#39;Strengths&#39;</span><span class="p">,</span> <span class="s1">&#39;Neurons&#39;</span><span class="p">]</span>
     <span class="p">}</span>
 
 <span class="c1"># Assign colors to nodes</span>
 <span class="k">def</span> <span class="nf">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;G1 &amp; G2&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>
-    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Tactful&#39;</span><span class="p">]:</span>
-        <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
-    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Firm&#39;</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Pre-Input/CudAlexnet&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Sound&#39;</span><span class="p">,</span> <span class="s1">&#39;Tactful&#39;</span><span class="p">,</span> <span class="s1">&#39;Firm&#39;</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;N1, N2, N3&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input/AgenticAI&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;N1, N2, N3&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Parasympathetic&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;G3&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Sympathetic&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Neurons&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Strengths&#39;</span><span class="p">,</span> <span class="s1">&#39;AChR&#39;</span><span class="p">,</span> <span class="s1">&#39;Vulnerabilities&#39;</span><span class="p">]:</span>
@@ -540,7 +538,7 @@ The output layer represents intelligence, not as a static endpoint but as an eme
 
     <span class="c1"># Add edges (without weights)</span>
     <span class="k">for</span> <span class="n">layer_pair</span> <span class="ow">in</span> <span class="p">[</span>
-        <span class="p">(</span><span class="s1">&#39;Pre-Input&#39;</span><span class="p">,</span> <span class="s1">&#39;Yellowstone&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Yellowstone&#39;</span><span class="p">,</span> <span class="s1">&#39;Input&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Input&#39;</span><span class="p">,</span> <span class="s1">&#39;Hidden&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Hidden&#39;</span><span class="p">,</span> <span class="s1">&#39;Output&#39;</span><span class="p">)</span>
+        <span class="p">(</span><span class="s1">&#39;Pre-Input/CudAlexnet&#39;</span><span class="p">,</span> <span class="s1">&#39;Yellowstone/SensoryAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Yellowstone/SensoryAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Input/AgenticAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">,</span> <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">)</span>
     <span class="p">]:</span>
         <span class="n">source_layer</span><span class="p">,</span> <span class="n">target_layer</span> <span class="o">=</span> <span class="n">layer_pair</span>
         <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">[</span><span class="n">source_layer</span><span class="p">]:</span>
@@ -563,13 +561,13 @@ The output layer represents intelligence, not as a static endpoint but as an eme
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/5800d473237d1ba59c9584a994afe258e2b015d414308414376008a6a659b4e4.png" src="../_images/5800d473237d1ba59c9584a994afe258e2b015d414308414376008a6a659b4e4.png" />
+<img alt="../_images/9080e0e5850b8f72acbdd14cc8aebfcd595a2f9309c7bc0394905f00d6461f10.png" src="../_images/9080e0e5850b8f72acbdd14cc8aebfcd595a2f9309c7bc0394905f00d6461f10.png" />
 </div>
 </div>
 <figure class="align-default" id="id2">
 <a class="reference internal image-reference" href="../_images/blanche.png"><img alt="../_images/blanche.png" src="../_images/blanche.png" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 11 </span><span class="caption-text"><em>Horse Racing Against the Red Queen</em>. The generations on generations of horse-breeding fit this narrative. In philosophy we might be sympathetic to Karl Marx (School of Resentment), parasympathetic to Plato (School of Athens), but we surely have gotta be delighted by Nietzsche (School of Life). We might also consider The Schools of ART: athens (plato), resentment (marx), transactions (nietzsche)</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text"><em>Agent AI Nvidia Vision &amp; Test-Time Scaling</em>. Here’s a scheme: user or machine (yellow node) -&gt; prompt/response -&gt; agent AI -&gt; [plan/monumental, tool use/antiquarian, critique/critical] -&gt; [Calculator, Web Search, Semantic Search, SQL Search, Generate Podcast]</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
