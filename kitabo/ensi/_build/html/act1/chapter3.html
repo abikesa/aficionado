@@ -407,6 +407,9 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="woo-d">
 <h1>Woo’d 🗡️❤️💰<a class="headerlink" href="#woo-d" title="Permalink to this heading">#</a></h1>
+<p>Scaling in machine learning—whether pre-training, post-training, or test-time—represents distinct phases of refining and applying models to achieve increasingly sophisticated reasoning. <strong>Pre-training scaling</strong> focuses on expanding the size of datasets and model architectures before any fine-tuning. Larger models trained on broader datasets tend to acquire generalized reasoning capabilities, akin to forming a vast foundation of latent knowledge. This stage emphasizes data diversity and model capacity to encode complex patterns, setting the stage for downstream adaptability.</p>
+<p><strong>Post-training scaling</strong>, by contrast, refines the model after pre-training, often involving fine-tuning on domain-specific datasets or augmenting the architecture with additional parameters. It prioritizes specialization, narrowing the focus of the model to align with specific tasks while leveraging the robust baseline reasoning capabilities established during pre-training. This phase can be seen as sharpening a multi-purpose tool into a finely-tuned instrument (e.g. reinforcement learning through human feedback).</p>
+<p>Finally, <strong>test-time scaling</strong> pertains to the dynamic adjustments made while the model is deployed, including techniques like ensemble methods or prompting strategies. These methods optimize the model’s reasoning on-the-fly, enhancing performance without altering underlying weights. Test-time scaling exemplifies situational adaptability, allowing models to perform better under variable conditions or with constrained resources. Together, these three scaling dimensions create a lifecycle of learning that evolves from general capability to specialized application and adaptive execution, mirroring human reasoning from foundational learning to expert decision-making in real-world scenarios.</p>
 <figure class="align-default" id="id1">
 <a class="reference internal image-reference" href="../_images/transformer.png"><img alt="../_images/transformer.png" src="../_images/transformer.png" style="width: 100%;" /></a>
 <figcaption>
@@ -442,14 +445,14 @@ document.write(`
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Input/AgenticAI&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;N1, N2, N3&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Hidden&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Hidden/GenerativeAI&#39;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Parasympathetic&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;G3&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Sympathetic&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Output/PhysicalAI&#39;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Neurons&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>
         <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Strengths&#39;</span><span class="p">,</span> <span class="s1">&#39;AChR&#39;</span><span class="p">,</span> <span class="s1">&#39;Vulnerabilities&#39;</span><span class="p">]:</span>
@@ -505,7 +508,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../_images/afdf3ab948ee78787047dbd6c34118fb56e1baafeacda97916b4d2728a0f0e50.png" src="../_images/afdf3ab948ee78787047dbd6c34118fb56e1baafeacda97916b4d2728a0f0e50.png" />
+<img alt="../_images/9080e0e5850b8f72acbdd14cc8aebfcd595a2f9309c7bc0394905f00d6461f10.png" src="../_images/9080e0e5850b8f72acbdd14cc8aebfcd595a2f9309c7bc0394905f00d6461f10.png" />
 </div>
 </div>
 <figure class="align-default" id="id2">
